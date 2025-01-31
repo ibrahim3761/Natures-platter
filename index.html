@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nature's Platter</title>
+    <!-- font -->
+     <!-- sora -->
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap" rel="stylesheet">
+     <!-- poppins -->
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">     
+    <!-- tailwind cdn -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- daisy ui cdn -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.23/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- style -->
+     <style>
+        .sora{
+            font-family: 'Sora', sans-serif;
+            font-size: 14px;
+        }
+        .poppins{
+            font-family: 'Poppins', sans-serif;
+            font-size: 1rem;
+        }
+        .prim-color{
+            color: #179800;
+        }
+        .secon-color{
+            color: #EFEBE3;
+        }
+        .text-color{
+            color: #111111;
+        }
+     </style>
+</head>
+<body class="sora">
+    <header class="bg-gradient-to-t from-[#EFEBE3]  to-white">
+        <nav class="p-2 border border-[#179800] md:border-none md:py-3 md:px-4 lg:px-28 flex justify-between items-center ">
+            <div>
+                <img src="/c2-assets/logo-header.png" alt="logo">
+            </div>
+            <div class="block md:hidden">
+                <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M3.75 8.4375C3.75 7.91973 4.16973 7.5 4.6875 7.5H25.3125C25.8303 7.5 26.25 7.91973 26.25 8.4375C26.25 8.95527 25.8303 9.375 25.3125 9.375H4.6875C4.16973 9.375 3.75 8.95527 3.75 8.4375ZM3.75 15C3.75 14.4822 4.16973 14.0625 4.6875 14.0625H25.3125C25.8303 14.0625 26.25 14.4822 26.25 15C26.25 15.5178 25.8303 15.9375 25.3125 15.9375H4.6875C4.16973 15.9375 3.75 15.5178 3.75 15ZM3.75 21.5625C3.75 21.0447 4.16973 20.625 4.6875 20.625H25.3125C25.8303 20.625 26.25 21.0447 26.25 21.5625C26.25 22.0803 25.8303 22.5 25.3125 22.5H4.6875C4.16973 22.5 3.75 22.0803 3.75 21.5625Z" fill="#179800"/>
+                    </svg>
+                    
+            </div>
+            <div class="pl-16 hidden md:block">
+                <ul class="flex gap-5">
+                    <li><a href="#">Product</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Contact US</a></li>
+                </ul>
+            </div>
+            <div class="hidden md:block">
+                <div class="flex gap-5 justify-center items-center">
+                    <div>
+                        <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g clip-path="url(#clip0_2_51)">
+                            <path d="M23.739 22.325L17.77 16.356C19.3966 14.3666 20.1964 11.8281 20.0039 9.26557C19.8113 6.70304 18.6412 4.31254 16.7356 2.58853C14.83 0.864519 12.3346 -0.0610992 9.76565 0.00313259C7.1967 0.0673644 4.75071 1.11653 2.93362 2.93362C1.11653 4.75071 0.0673644 7.1967 0.00313259 9.76565C-0.0610992 12.3346 0.864519 14.83 2.58853 16.7356C4.31254 18.6412 6.70304 19.8113 9.26557 20.0039C11.8281 20.1964 14.3666 19.3966 16.356 17.77L22.325 23.739C22.5136 23.9212 22.7662 24.022 23.0284 24.0197C23.2906 24.0174 23.5414 23.9122 23.7268 23.7268C23.9122 23.5414 24.0174 23.2906 24.0197 23.0284C24.022 22.7662 23.9212 22.5136 23.739 22.325ZM10.032 18.032C8.44976 18.032 6.90304 17.5628 5.58745 16.6838C4.27185 15.8047 3.24647 14.5553 2.64097 13.0935C2.03547 11.6317 1.87704 10.0231 2.18573 8.47129C2.49441 6.91944 3.25633 5.49397 4.37515 4.37515C5.49397 3.25633 6.91944 2.49441 8.47129 2.18573C10.0231 1.87704 11.6317 2.03547 13.0935 2.64097C14.5553 3.24647 15.8047 4.27185 16.6838 5.58745C17.5628 6.90304 18.032 8.44976 18.032 10.032C18.0296 12.153 17.186 14.1865 15.6862 15.6862C14.1865 17.186 12.153 18.0296 10.032 18.032Z" fill="black"/>
+                            </g>
+                            <defs>
+                            <clipPath id="clip0_2_51">
+                            <rect width="24.0197" height="24.0197" fill="white"/>
+                            </clipPath>
+                            </defs>
+                            </svg>                        
+                    </div>
+    
+                    <div>
+                        <svg width="29" height="24" viewBox="0 0 29 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M22.2231 4.78782H22.3112L20.7883 8.94168H7.54328C5.59011 8.94168 4.18301 10.8156 4.72779 12.6912L5.32459 14.746L3.67878 14.52L3.67879 14.52L3.67089 14.519C2.82923 14.4125 2.14916 13.7809 1.98099 12.9492L0.80993 7.15693C0.562336 5.93227 1.49856 4.78782 2.748 4.78782H22.2231Z" stroke="#111111" stroke-width="1.5"/>
+                            <path d="M19.8383 11.5326L18.1974 16.0081L18.0209 16.4894L8.13463 15.1319L7.21586 11.9686L7.21586 11.9686C7.15251 11.7505 7.31612 11.5326 7.54325 11.5326H19.8383ZM17.0571 20.3962H18.7099L19.1242 21.1126C19.2457 21.3226 19.3154 21.5661 19.3154 21.828C19.3154 22.6188 18.6743 23.2599 17.8836 23.2599C17.0928 23.2599 16.4518 22.6188 16.4518 21.828C16.4518 21.5661 16.5214 21.3226 16.6429 21.1126L17.0571 20.3962ZM3.72772 20.3962H4.55417L4.9684 21.1126C5.08984 21.3226 5.15953 21.5661 5.15953 21.828C5.15953 22.6188 4.51848 23.2599 3.72772 23.2599C2.93696 23.2599 2.2959 22.6188 2.2959 21.828C2.2959 21.0373 2.93694 20.3962 3.72772 20.3962Z" stroke="#111111" stroke-width="1.5"/>
+                            </svg>        
+                    </div>
+
+                    <div class="flex gap-2">
+                        <Button class="border-[#179800] border rounded-md w-20 h-10 justify-center text-center">Login</Button>
+                        <button class="bg-[#179800] rounded-md w-24 h-10 justify-center text-center text-white">Register</button>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <section class=" md:pt-2 mt-10 flex flex-col justify-center items-center text-center">
+            <div class="md:px-10 items-center text-center">
+                <h2 class="px-4 text-2xl md:text-6xl font-semibold md:px-12 lg:px-20 animate-pulse delay-75">Freshness  <span class="prim-color">You Can <br> Count</span> On, Prices You’ll Love!</h2>
+                <p class="px-3 text-sm md:text-2xl mt-6 opacity-80 animate-pulse delay-150">Shop your daily essentials at unbeatable prices. From fresh produce to pantry <br> staples, we’ve got you covered every day!</p>
+            </div>
+            <div class="flex justify-center items-center">
+                <img class="md:w-11/12 md:mx-auto mb-0" src="/c2-assets/hero-vegetables.png" alt="">
+            </div>
+        </section>
+    </header>
+    <main class=" mt-24 p-2 md:px-4 lg:px-28">
+        <!-- services -->
+        <section class="mb-10" >
+            <h2 class="prim-color font-semibold text-2xl md:text-4xl mb-5">Services</h2>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 justify-center items-center text-center gap-5">
+                <div class="bg-[#EFEBE3] rounded-lg py-7 px-3 flex flex-col text-center justify-center items-center">
+                    <div class="bg-white rounded-full w-32 h-32 flex justify-center items-center mb-5"><img src="/c2-assets/service.png"  alt=""></div>
+                    <h3 class="font-semibold text-xl md:text-2xl mb-3">24/7 Services</h3>
+                    <p class="opacity-70">Our customer support and services are available 24/7, ensuring you get the assistance and information you need at any time of the day. Whether you have inquiries about products or need help with orders, we’re here for you round the clock.</p>
+                </div>
+                <div class="bg-[#EFEBE3] rounded-lg py-7 px-3 flex flex-col text-center justify-center items-center">
+                    <div class="bg-white rounded-full w-32 h-32 flex justify-center items-center mb-5"><img src="/c2-assets/delivery.png"  alt=""></div>
+                    <h3 class="font-semibold text-xl md:text-2xl mb-3">Fast Delivery</h3>
+                    <p class="opacity-70">We prioritize speed and efficiency in delivering your orders. With our express delivery system, you can expect your fresh groceries and essentials at your doorstep in no time. Say goodbye to long waits and enjoy hassle-free shopping.</p>
+                </div>
+                <div class="bg-[#EFEBE3] rounded-lg py-7 px-3 flex flex-col text-center justify-center items-center">
+                    <div class="bg-white rounded-full w-32 h-32 flex justify-center items-center mb-5"><img src="/c2-assets/healthy.png"  alt=""></div>
+                    <h3 class="font-semibold text-xl md:text-2xl mb-3">Halthy Products</h3>
+                    <p class="opacity-70">We offer a curated selection of healthy, organic, and high-quality products to support your well-being. From fresh vegetables to nutritious pantry staples, we ensure that everything you consume is natural, safe, and beneficial for a healthy lifestyle.</p>
+                </div>
+            </div>
+        </section>
+        <!-- main products -->
+         <section class="bg-[#EFEBE3] md:p-28">
+            <h2 class="prim-color font-semibold text-2xl md:text-4xl mb-5">Popular Products</h2>
+            <div class="flex flex-col lg:flex-row gap-3 ">
+                <div class="md md:pt-12 pt-4 px-5 md:px-8 bg-gradient-to-br from-[#53DB3A] via-green-300 to-white rounded-xl h-1/2">
+                    <h3 class="text-white md:text-2xl mb-3 lg:text-3xl"><span class="text-[#EFEBE3]">30</span>% off</h3>
+                    <p class="text-[#111111] opacity-70 text-sm md:text-lg mb-6">Discover a world of treats, toys, and <br> essentials handpicked for </p>
+                    <button class="text-center text-sm md:text-xl font-semibold h-8 w-28 md:h-10 md:w-32 rounded-lg bg-white">Buy Now</button>
+                    <div class="md:-mt-20 -mt-16 ml-16 md:ml-28">
+                        <img src="/c2-assets/vegetable-offer.png" alt="">
+                    </div>
+                </div>
+                <div class="grid grid-cols-2 lg:grid-cols-3 gap-8">
+                    <!-- onion -->
+                    <div class=" bg-white rounded-lg pl-3 flex pt-1 lg:pt-4 gap-2 lg:w-[12.5rem]">
+                        <div class="bg-[#EFEBE3] rounded-lg h-16">
+                            <img src="/c2-assets/onion.png" alt="">
+                        </div>
+                        <div class="h-16 flex flex-col">
+                            <p class="flex gap-2"><svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <g clip-path="url(#clip0_4_1343)">
+                                <path d="M17.5222 6.43804L11.9887 5.59279L9.50849 0.309791C9.32324 -0.084709 8.67599 -0.084709 8.49074 0.309791L6.01124 5.59279L0.47774 6.43804C0.0232398 6.50779 -0.15826 7.06054 0.16049 7.38679L4.18049 11.5073L3.23024 17.3325C3.15449 17.7953 3.64874 18.1425 4.05749 17.9153L8.99999 15.1838L13.9425 17.916C14.3475 18.141 14.8462 17.8005 14.7697 17.3333L13.8195 11.508L17.8395 7.38754C18.1582 7.06054 17.976 6.50779 17.5222 6.43804Z" fill="#FFC107"/>
+                                </g>
+                                <defs>
+                                <clipPath id="clip0_4_1343">
+                                <rect width="18" height="18" fill="white"/>
+                                </clipPath>
+                                </defs>
+                                </svg>4.5</p>
+                            <h6 class="font-bold">Onion 1KG</h6>
+                            <p>$39.99</p>
+                        </div>
+                    </div>
+                    <!-- tomato -->
+                    <div class=" bg-white rounded-lg pl-3 flex pt-1 lg:pt-4 gap-2 lg:w-[12.5rem]">
+                        <div class="bg-[#EFEBE3] rounded-lg h-16">
+                            <img src="/c2-assets/tomato.png" alt="">
+                        </div>
+                        <div class="h-16 flex flex-col">
+                            <p class="h-16 flex gap-2">
+                                <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <g clip-path="url(#clip0_4_1343)">
+                                <path d="M17.5222 6.43804L11.9887 5.59279L9.50849 0.309791C9.32324 -0.084709 8.67599 -0.084709 8.49074 0.309791L6.01124 5.59279L0.47774 6.43804C0.0232398 6.50779 -0.15826 7.06054 0.16049 7.38679L4.18049 11.5073L3.23024 17.3325C3.15449 17.7953 3.64874 18.1425 4.05749 17.9153L8.99999 15.1838L13.9425 17.916C14.3475 18.141 14.8462 17.8005 14.7697 17.3333L13.8195 11.508L17.8395 7.38754C18.1582 7.06054 17.976 6.50779 17.5222 6.43804Z" fill="#FFC107"/>
+                                </g>
+                                <defs>
+                                <clipPath id="clip0_4_1343">
+                                <rect width="18" height="18" fill="white"/>
+                                </clipPath>
+                                </defs>
+                                </svg>4.5</p>
+                            <h6 class="font-bold">Tomato 500 g</h6>
+                            <p>$39.99</p>
+                        </div>
+                    </div>
+                    <!-- potato -->
+                    <div class=" bg-white rounded-lg pl-3 flex pt-1 lg:pt-4 gap-2 lg:w-[12.5rem]">
+                        <div class="bg-[#EFEBE3] rounded-lg h-16">
+                            <img src="/c2-assets/potato.png" alt="">
+                        </div>
+                        <div class=" h-16 flex flex-col">
+                            <p class="flex gap-2">
+                                <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <g clip-path="url(#clip0_4_1343)">
+                                <path d="M17.5222 6.43804L11.9887 5.59279L9.50849 0.309791C9.32324 -0.084709 8.67599 -0.084709 8.49074 0.309791L6.01124 5.59279L0.47774 6.43804C0.0232398 6.50779 -0.15826 7.06054 0.16049 7.38679L4.18049 11.5073L3.23024 17.3325C3.15449 17.7953 3.64874 18.1425 4.05749 17.9153L8.99999 15.1838L13.9425 17.916C14.3475 18.141 14.8462 17.8005 14.7697 17.3333L13.8195 11.508L17.8395 7.38754C18.1582 7.06054 17.976 6.50779 17.5222 6.43804Z" fill="#FFC107"/>
+                                </g>
+                                <defs>
+                                <clipPath id="clip0_4_1343">
+                                <rect width="18" height="18" fill="white"/>
+                                </clipPath>
+                                </defs>
+                                </svg>4.5</p>
+                            <h6 class="font-bold">Potato 1Kg</h6>
+                            <p>$39.99</p>
+                        </div>
+                    </div>
+                    <!-- tomato -->
+                    <div class=" bg-white rounded-lg pl-3 flex pt-1 lg:pt-4 gap-2 lg:w-[12.5rem]">
+                        <div class="bg-[#EFEBE3] rounded-lg h-16">
+                            <img src="/c2-assets/tomato.png" alt="">
+                        </div>
+                        <div class="h-16 flex flex-col">
+                            <p class="h-16 flex gap-2">
+                                <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <g clip-path="url(#clip0_4_1343)">
+                                <path d="M17.5222 6.43804L11.9887 5.59279L9.50849 0.309791C9.32324 -0.084709 8.67599 -0.084709 8.49074 0.309791L6.01124 5.59279L0.47774 6.43804C0.0232398 6.50779 -0.15826 7.06054 0.16049 7.38679L4.18049 11.5073L3.23024 17.3325C3.15449 17.7953 3.64874 18.1425 4.05749 17.9153L8.99999 15.1838L13.9425 17.916C14.3475 18.141 14.8462 17.8005 14.7697 17.3333L13.8195 11.508L17.8395 7.38754C18.1582 7.06054 17.976 6.50779 17.5222 6.43804Z" fill="#FFC107"/>
+                                </g>
+                                <defs>
+                                <clipPath id="clip0_4_1343">
+                                <rect width="18" height="18" fill="white"/>
+                                </clipPath>
+                                </defs>
+                                </svg>4.5</p>
+                            <h6 class="font-bold">Tomato 500 g</h6>
+                            <p>$39.99</p>
+                        </div>
+                    </div>
+                    <!-- onion -->
+                    <div class=" bg-white rounded-lg pl-3 flex pt-1 lg:pt-4 gap-2 lg:w-[12.5rem]">
+                        <div class="bg-[#EFEBE3] rounded-lg h-16">
+                            <img src="/c2-assets/onion.png" alt="">
+                        </div>
+                        <div class="h-16 flex flex-col">
+                            <p class="flex gap-2"><svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <g clip-path="url(#clip0_4_1343)">
+                                <path d="M17.5222 6.43804L11.9887 5.59279L9.50849 0.309791C9.32324 -0.084709 8.67599 -0.084709 8.49074 0.309791L6.01124 5.59279L0.47774 6.43804C0.0232398 6.50779 -0.15826 7.06054 0.16049 7.38679L4.18049 11.5073L3.23024 17.3325C3.15449 17.7953 3.64874 18.1425 4.05749 17.9153L8.99999 15.1838L13.9425 17.916C14.3475 18.141 14.8462 17.8005 14.7697 17.3333L13.8195 11.508L17.8395 7.38754C18.1582 7.06054 17.976 6.50779 17.5222 6.43804Z" fill="#FFC107"/>
+                                </g>
+                                <defs>
+                                <clipPath id="clip0_4_1343">
+                                <rect width="18" height="18" fill="white"/>
+                                </clipPath>
+                                </defs>
+                                </svg>4.5</p>
+                            <h6 class="font-bold">Onion 1KG</h6>
+                            <p>$39.99</p>
+                        </div>
+                    </div>
+                    <!-- tomato -->
+                    <div class=" bg-white rounded-lg pl-3 flex pt-1 lg:pt-4 gap-2 lg:w-[12.5rem]">
+                        <div class="bg-[#EFEBE3] rounded-lg h-16">
+                            <img src="/c2-assets/tomato.png" alt="">
+                        </div>
+                        <div class="h-16 flex flex-col">
+                            <p class="h-16 flex gap-2">
+                                <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <g clip-path="url(#clip0_4_1343)">
+                                <path d="M17.5222 6.43804L11.9887 5.59279L9.50849 0.309791C9.32324 -0.084709 8.67599 -0.084709 8.49074 0.309791L6.01124 5.59279L0.47774 6.43804C0.0232398 6.50779 -0.15826 7.06054 0.16049 7.38679L4.18049 11.5073L3.23024 17.3325C3.15449 17.7953 3.64874 18.1425 4.05749 17.9153L8.99999 15.1838L13.9425 17.916C14.3475 18.141 14.8462 17.8005 14.7697 17.3333L13.8195 11.508L17.8395 7.38754C18.1582 7.06054 17.976 6.50779 17.5222 6.43804Z" fill="#FFC107"/>
+                                </g>
+                                <defs>
+                                <clipPath id="clip0_4_1343">
+                                <rect width="18" height="18" fill="white"/>
+                                </clipPath>
+                                </defs>
+                                </svg>4.5</p>
+                            <h6 class="font-bold">Tomato 500 g</h6>
+                            <p>$39.99</p>
+                        </div>
+                    </div>
+                    <!-- onion -->
+                    <div class=" bg-white rounded-lg pl-3 flex pt-1 lg:pt-4 gap-2 lg:w-[12.5rem]">
+                        <div class="bg-[#EFEBE3] rounded-lg h-16">
+                            <img src="/c2-assets/onion.png" alt="">
+                        </div>
+                        <div class="h-16 flex flex-col">
+                            <p class="flex gap-2"><svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <g clip-path="url(#clip0_4_1343)">
+                                <path d="M17.5222 6.43804L11.9887 5.59279L9.50849 0.309791C9.32324 -0.084709 8.67599 -0.084709 8.49074 0.309791L6.01124 5.59279L0.47774 6.43804C0.0232398 6.50779 -0.15826 7.06054 0.16049 7.38679L4.18049 11.5073L3.23024 17.3325C3.15449 17.7953 3.64874 18.1425 4.05749 17.9153L8.99999 15.1838L13.9425 17.916C14.3475 18.141 14.8462 17.8005 14.7697 17.3333L13.8195 11.508L17.8395 7.38754C18.1582 7.06054 17.976 6.50779 17.5222 6.43804Z" fill="#FFC107"/>
+                                </g>
+                                <defs>
+                                <clipPath id="clip0_4_1343">
+                                <rect width="18" height="18" fill="white"/>
+                                </clipPath>
+                                </defs>
+                                </svg>4.5</p>
+                            <h6 class="font-bold">Onion 1KG</h6>
+                            <p>$39.99</p>
+                        </div>
+                    </div>
+                    <!-- potato -->
+                    <div class=" bg-white rounded-lg pl-3 flex pt-1 lg:pt-4 gap-2 lg:w-[12.5rem]">
+                        <div class="bg-[#EFEBE3] rounded-lg h-16">
+                            <img src="/c2-assets/potato.png" alt="">
+                        </div>
+                        <div class=" h-16 flex flex-col">
+                            <p class="flex gap-2">
+                                <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <g clip-path="url(#clip0_4_1343)">
+                                <path d="M17.5222 6.43804L11.9887 5.59279L9.50849 0.309791C9.32324 -0.084709 8.67599 -0.084709 8.49074 0.309791L6.01124 5.59279L0.47774 6.43804C0.0232398 6.50779 -0.15826 7.06054 0.16049 7.38679L4.18049 11.5073L3.23024 17.3325C3.15449 17.7953 3.64874 18.1425 4.05749 17.9153L8.99999 15.1838L13.9425 17.916C14.3475 18.141 14.8462 17.8005 14.7697 17.3333L13.8195 11.508L17.8395 7.38754C18.1582 7.06054 17.976 6.50779 17.5222 6.43804Z" fill="#FFC107"/>
+                                </g>
+                                <defs>
+                                <clipPath id="clip0_4_1343">
+                                <rect width="18" height="18" fill="white"/>
+                                </clipPath>
+                                </defs>
+                                </svg>4.5</p>
+                            <h6 class="font-bold">Potato 1Kg</h6>
+                            <p>$39.99</p>
+                        </div>
+                    </div>
+                    <!-- potato -->
+                    <div class=" bg-white rounded-lg pl-3 hidden lg:flex lg:block  pt-1 mb-1 lg:pt-4 gap-2 lg:w-[12.5rem]">
+                        <div class="bg-[#EFEBE3] rounded-lg h-16">
+                            <img src="/c2-assets/potato.png" alt="">
+                        </div>
+                        <div class=" h-16 flex flex-col">
+                            <p class="flex gap-2">
+                                <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <g clip-path="url(#clip0_4_1343)">
+                                <path d="M17.5222 6.43804L11.9887 5.59279L9.50849 0.309791C9.32324 -0.084709 8.67599 -0.084709 8.49074 0.309791L6.01124 5.59279L0.47774 6.43804C0.0232398 6.50779 -0.15826 7.06054 0.16049 7.38679L4.18049 11.5073L3.23024 17.3325C3.15449 17.7953 3.64874 18.1425 4.05749 17.9153L8.99999 15.1838L13.9425 17.916C14.3475 18.141 14.8462 17.8005 14.7697 17.3333L13.8195 11.508L17.8395 7.38754C18.1582 7.06054 17.976 6.50779 17.5222 6.43804Z" fill="#FFC107"/>
+                                </g>
+                                <defs>
+                                <clipPath id="clip0_4_1343">
+                                <rect width="18" height="18" fill="white"/>
+                                </clipPath>
+                                </defs>
+                                </svg>4.5</p>
+                            <h6 class="font-bold">Potato 1Kg</h6>
+                            <p>$39.99</p>
+                        </div>
+                    </div>
+                </div>
+            </div>    
+         </section>
+    </main>
+    <footer></footer>
+</body>
+</html>
